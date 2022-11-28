@@ -2,7 +2,7 @@ function Zebrai({randColor}) {
     return (
         <>
         <h2 style={{
-            color: randColor,
+            color: randColor === "1" ? "red" : "blue"
         }}> Zebrai ir Bebrai
         </h2>
         </>

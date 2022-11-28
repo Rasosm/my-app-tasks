@@ -1,5 +1,7 @@
 import './App.css';
+import Animals from './Components/Animals';
 import Betkoks from './Components/Betkoks';
+import Forest from './Components/Forest';
 import Labas from './Components/Labas';
 import Zebrai from './Components/Zebrai';
 import rand from './Functions/rand';
@@ -9,10 +11,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Betkoks bet="yellow"></Betkoks>
-        <Zebrai style={{
-         randColor: rand(0, 1) ? 'crimson' : 'skyblue',
-        
-      }}></Zebrai>
+        <Animals dogs="buldog, smok" birds="gsacn, hdfhda"></Animals>
+        <Forest forestColor="green" trees="fgjcvn, jhfj" insects="fjgf, vchh"></Forest>
+        <Zebrai randColor="2"></Zebrai>
         <Labas></Labas>
       </header>
     </div>
