@@ -1,11 +1,5 @@
-function Zebrai({randColor}) {
-    return (
-        <>
-        <h2 style={{
-            color: randColor === "1" ? "red" : "blue"
-        }}> Zebrai ir Bebrai
-        </h2>
-        </>
-    )
-        }
+function Zebrai({ textColor }) {
+  return <h1 style={{ color: textColor }}>Zebrai ir Bebrai</h1>;
+}
+
 export default Zebrai;
