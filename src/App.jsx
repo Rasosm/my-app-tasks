@@ -87,13 +87,11 @@ function App() {
                             key={i}
                             className="shape suo"
                             style={{
-                                backgroundColor:
-                                    dog.length > 6 ? 'green' : 'red',
+                                color: dog.length > 6 ? 'green' : 'red',
                             }}
                         >
                             {dog}
                             {dog.length}
-                            {dog.length > 6 ? 'green' : 'red'}
                         </div>
                     ))}
                 </div>
