@@ -38,12 +38,26 @@ function App() {
                 <BtnTest />
             </header>
             <div className="container">
-                <div className="container">
+                <div className="dogs">
                     {dogs.map((dog, i) => (
-                        <div key={i} className="shape">
+                        <div key={i} className="shape suo">
                             {dog}
                         </div>
                     ))}
+                </div>
+                <div className="dogs">
+                    {dogs
+                        .sort((a, b) => b.length - a.length)
+                        .map((dog, i) => (
+                            <div
+                                key={i}
+                                className="shape suo"
+                                style={{ borderRadius: '50%' }}
+                            >
+                                {i + 1}
+                                {dog}
+                            </div>
+                        ))}
                 </div>
             </div>
         </div>

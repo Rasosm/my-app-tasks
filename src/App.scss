@@ -45,6 +45,16 @@
     margin: 10px;
     
 }
+.circle {
+    width: 80px;
+    height: 80px;
+    background: brown;
+    line-height: 70px;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 50%;
+
+}
 .bin {
     display: flex;
     justify-content: center;
@@ -79,7 +89,22 @@
 
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
         align-items: center;
         justify-content: center;
+       
+}
+.dogs{
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.suo{
+    font-size: 20px;
+}
+p{
+    margin: 0;
 }
