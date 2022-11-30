@@ -90,7 +90,6 @@ function App() {
                                 color: dog.length > 6 ? 'green' : 'red',
                             }}
                         >
-                            {dog}
                             {dog.length}
                         </div>
                     ))}
