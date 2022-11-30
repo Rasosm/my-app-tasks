@@ -59,6 +59,44 @@ function App() {
                             </div>
                         ))}
                 </div>
+                <div className="dogs">
+                    {dogs.map((dog, i) => (
+                        <div
+                            key={i}
+                            className="shape suo"
+                            style={{
+                                borderRadius: i % 2 !== 0 ? '50%' : 'none',
+                            }}
+                        >
+                            {dog}
+                        </div>
+                    ))}
+                </div>
+                <div className="dogs">
+                    {dogs
+                        .filter((dog) => dog[0].toUpperCase() !== dog[0])
+                        .map((dog, i) => (
+                            <div key={i} className="shape suo">
+                                {dog}
+                            </div>
+                        ))}
+                </div>
+                <div className="dogs">
+                    {dogs.map((dog, i) => (
+                        <div
+                            key={i}
+                            className="shape suo"
+                            style={{
+                                backgroundColor:
+                                    dog.length > 6 ? 'green' : 'red',
+                            }}
+                        >
+                            {dog}
+                            {dog.length}
+                            {dog.length > 6 ? 'green' : 'red'}
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
