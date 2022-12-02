@@ -39,7 +39,7 @@
 .shape {
     width: 80px;
     height: 80px;
-    background: brown;
+    background: rgb(226, 51, 51);
     line-height: 70px;
     font-size: 30px;
     margin: 10px;
@@ -48,7 +48,7 @@
 .circle {
     width: 80px;
     height: 80px;
-    background: brown;
+    background: rgb(37, 93, 28);
     line-height: 70px;
     font-size: 30px;
     margin: 10px;
@@ -107,4 +107,59 @@ display: flex;
 }
 p{
     margin: 0;
+}
+ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 30px;
+    border: 1px dotted white;
+
+    li {
+        width: 200px;
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        position: relative;
+    }
+
+    h2 {
+        height: 50px;
+        overflow: hidden;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 16px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: skyblue;
+    }
+
+    .id {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid skyblue;
+        border-radius: 50%;
+        color: coral;
+        font-size: 14px;
+    }
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    background-color: #ffa500cc;
 }
